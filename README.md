@@ -1,2 +1,0 @@
-# InClassAsgmtt
-InclassAsgmt by Psycho
