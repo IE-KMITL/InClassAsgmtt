@@ -1,4 +1,4 @@
-int sensor_l = 26;
+int sensor_l = 26; 
 int LED_R = 27;
 int sensor_r = 18;
 const int trigPin = 13;
