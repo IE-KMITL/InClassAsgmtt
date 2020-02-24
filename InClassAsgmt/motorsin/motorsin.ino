@@ -1,8 +1,4 @@
-#include <Arduino.h>
 #include <analogWrite.h>
-
-int brightStep = 1;
-int brightness = 0;
 #define ia1 13
 #define ia2 12
 #define ib1 19
@@ -16,7 +12,6 @@ int angle = 0;
 
 void setup() {
   // Set resolution for a specific pin
-  analogWriteResolution(LED_BUILTIN, 12);
   pinMode(ia1, OUTPUT);
   pinMode(ia2, OUTPUT);
   pinMode(ib1, OUTPUT);
@@ -25,15 +20,6 @@ void setup() {
 }
 
 void loop() {
-  brightness += brightStep;
-  if ( brightness == 0 || brightness == 255 ) {
-    brightStep = -brightStep;
-  }
-
-  analogWrite(LED_BUILTIN, brightness);
-
-  delay(10);
-
   // put your main code here, to run repeatedly:
   //aStop();
   //bStop();
