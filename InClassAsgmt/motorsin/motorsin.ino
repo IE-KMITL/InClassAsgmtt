@@ -1,6 +1,6 @@
 #include <analogWrite.h>
 #define ia1 13
-#define ia2 12
+#define ia2 14
 #define ib1 19
 #define ib2 23
 
