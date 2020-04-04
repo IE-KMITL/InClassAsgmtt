@@ -4,7 +4,7 @@ int sensor_l1 = 4;
 int sensor_r1 = 5;
 int sensor_l2 = 12;
 int sensor_r2 = 13;
-int analogPin = 3;
+int analogPin = 2;
 int ia1 = 8;
 int ia2 = 9;
 int ib1 = 10;
@@ -68,11 +68,11 @@ void loop() {
       turnRight(255);
       delay(200);
     }
-    else if (line >= 180 && line <= 185) {
+    else if (line >= 180 && line <= 185) { //ต้องลองเทสค่าสีอีกรอบ
       carReturn(200);
       delay(920);
     }
-    else if (line >= 175 && line <= 180) {
+    else if (line >= 175 && line <= 180) { //ต้องลองเทสค่าสีอีกรอบ
       carForward(255);
     }
   }

@@ -4,7 +4,7 @@ int sensor_l1 = 4;
 int sensor_r1 = 5;
 int sensor_l2 = 12;
 int sensor_r2 = 13;
-int analogPin = 3;
+int analogPin = 2;
 int ia1 = 8;
 int ia2 = 9;
 int ib1 = 10;
@@ -40,7 +40,6 @@ void loop() {
   bool right1 = digitalRead(sensor_r1);
   bool left2 = digitalRead(sensor_l2);
   bool right2 = digitalRead(sensor_r2);
-  line = analogRead(analogPin); //detectColor
 
   carForward(255);
   if (line > 500) //ถ้าเจอเส้นดำ //ต้องลองเทสสีดำ
